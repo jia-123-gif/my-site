@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于我｜小明</title>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="top-nav">
+      <a href="#about">关于我</a>
+      <a href="#todo">待办清单</a>
+      <a href="#message">留言</a>
+    </div>
+    <button id="themeBtn">🌙</button>
+  </div>
+
+  <!-- 个人卡片 -->
+  <div class="profile-card" id="about">
+    <img class="avatar" src="https://wimg.588ku.com/gif320/24/07/09/bd030e8c642448099b8eb01fc48a1fda.gif" alt="头像">
+    <div class="name-row">
+      <div class="name">小明</div>
+      <span class="status">在线</span>
+    </div>
+    <div class="desc">学生｜喜欢前端 ✨</div>
+    <div class="signature">喜欢简单干净的东西，很高兴认识你</div>
+    <div class="tag-wrap">
+      <span class="tag">看书</span>
+      <span class="tag">听歌</span>
+      <span class="tag">打游戏</span>
+    </div>
+    <div class="social-wrap">
+      <a href="https://github.com/" target="_blank">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+        </svg>
+      </a>
+      <a href="#" target="_blank">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 01.213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 00.167-.054l1.903-1.114a.864.864 0 01.717-.098 10.16 10.16 0 002.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.148-8.596-6.148zM5.6 6.5c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.672-1.5-1.5.672-1.5 1.5-1.5zm4.8 0c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.672-1.5-1.5.672-1.5 1.5-1.5zm8.8 3.2c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 01.598.082l1.584.926a.272.272 0 00.14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 01-.023-.156.49.49 0 01.201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-6.8-6.28zm-2.3 3.2c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1zm4.4 0c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1z"/>
+        </svg>
+      </a>
+    </div>
+    <div class="btn-group">
+      <a href="#message" class="btn btn-primary">给我留言</a>
+      <a href="#todo" class="btn btn-secondary">待办清单</a>
+    </div>
+  </div>
+
+  <!-- 待办区域 -->
+  <div class="todo-box" id="todo">
+    <h2>我的待办清单</h2>
+    <div class="input-wrap">
+      <input id="taskInput" placeholder="输入任务">
+      <button id="addBtn">添加</button>
+    </div>
+    <ul id="list"></ul>
+  </div>
+
+  <!-- 留言表单 -->
+  <div class="form-box" id="message">
+    <h4>给我留一条消息</h4>
+    <form id="msgForm">
+      <input type="text" placeholder="你的昵称" required>
+      <input type="email" placeholder="你的邮箱" required>
+      <input type="text" placeholder="留言内容" required>
+      <button type="submit">发送留言</button>
+    </form>
+  </div>
+
+  <footer>© 2026 小明</footer>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
